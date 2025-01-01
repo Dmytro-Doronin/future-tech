@@ -19,7 +19,15 @@
 @use 'blocks/resources-preview';
 @use 'blocks/team';
 
+@use 'blocks/card';
+@use 'blocks/list';
+@use 'blocks/section';
+@use 'blocks/tag';
+@use 'blocks/tile';
+
+
 .header,
+ main > *:not(:last-child),
 .footer {
   display: none !important;
 }

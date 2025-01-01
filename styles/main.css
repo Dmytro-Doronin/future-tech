@@ -972,7 +972,47 @@ button[arial-label]:before {
   margin-left: calc(var(--personImageSize) / 4 * -1);
 }
 
+.list__item:not(:last-child) {
+  border-bottom: var(--border);
+}
+
+.section__header {
+  padding-block: clamp(2.5rem, 0.8884297521rem + 6.6115702479vw, 7.5rem);
+  background-color: var(--color-dark-10);
+}
+.section__header-info {
+  display: grid;
+  align-items: start;
+  row-gap: 1rem;
+}
+@media (width <= 90.06125rem) {
+  .section__header-info {
+    row-gap: 0.625rem;
+  }
+}
+.section__subtitle {
+  justify-self: start;
+}
+.section__body {
+  border-block: var(--border);
+}
+
+.tag {
+  font-size: clamp(0.875rem, 0.7541322314rem + 0.4958677686vw, 1.25rem);
+  padding: 0.375rem 0.625rem;
+  color: var(--color-light);
+  font-weight: 500;
+  background-color: var(--color-dark-20);
+  border-radius: 0.25rem;
+}
+@media (width <= 90.06125rem) {
+  .tag {
+    padding: 0.25rem 0.5rem;
+  }
+}
+
 .header,
+main > *:not(:last-child),
 .footer {
   display: none !important;
 }
