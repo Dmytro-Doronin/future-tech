@@ -30,6 +30,10 @@
 @use 'blocks/person-card';
 @use 'blocks/tabs';
 
+@use 'blocks/download-info';
+
+
+
 
 .header,
  main > *:not(:last-child),

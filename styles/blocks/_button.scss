@@ -30,4 +30,8 @@
     color: var(--color-dark);
     font-weight: 500;
   }
+
+  &--dark-grey {
+    background-color: var(--color-dark-10);
+  }
 }
